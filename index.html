@@ -17,7 +17,7 @@
            <a class="header-logo" lang="en" href=""><span class="logo-web">Web</span>Studio</a>
        <nav class="header-navigation">  
          <ul class="header-list list">
-           <li class="header-link-item"><a class="header-link link" href="./index.html">Студия</a></li>
+           <li class="header-link-item"><a class="header-link link current" href="./index.html">Студия</a></li>
            <li class="header-link-item"><a class="header-link link" href="./portfolio.html">Портфолио</a></li>
            <li class="header-link-item"><a class="header-link link" href="">Контакты</a></li>
          </ul>
@@ -40,7 +40,7 @@
        <section class="herov-section">
         <div class="container">
           <h1 class="herov-header">Эффективные решения для вашего бизнеса</h1>
-          <button class="herov-btn" type="button">Заказать услугу</button>
+          <button class="herov-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
         </section>
        <section class="about-section">
@@ -97,15 +97,24 @@
          <div class="container">
            <h2 class="about-business-header">Чем мы занимаемся</h2>
            <ul class="about-business-list list">
-               <li class="about-business-item">
-                   <img class="about-business-img" width="370" src="./images/box1.jpg" alt="компьюторы">
-               </li>
-               <li class="about-business-item">
+              <li class="about-business-item">
+                 <div class="about-business-wrap">
+                  <img class="about-business-img" width="370" src="./images/box1.jpg" alt="компьюторы">
+                  <p class="about-business-up-text">декстопные приложения</p>
+                </div>
+              </li>
+              <li class="about-business-item">
+                <div class="about-business-wrap">
                    <img class="about-business-img" width="370" src="./images/box2.jpg" alt="телефоны">
-               </li>
-               <li class="about-business-item">
+                   <p class="about-business-up-text">мобильные приложения</p>
+                </div>
+              </li>
+              <li class="about-business-item">
+                <div class="about-business-wrap">
                    <img class="about-business-img" width="370" src="./images/box3.jpg" alt="планшеты">
-               </li>
+                   <p class="about-business-up-text">дизайнерские решения</p>
+                </div>
+              </li>
            </ul>
           </div>
        </section>
@@ -361,5 +370,15 @@
            </div>
        </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="icon-vector" width="11" height="11">
+              <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
